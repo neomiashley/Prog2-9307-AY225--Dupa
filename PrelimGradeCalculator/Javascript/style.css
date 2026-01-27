@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fde2e4, #e0fbfc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top h1 {
+  font-size: 26px;
+  color: #6b4f9c;
+}
+
+.top p {
+  font-size: 14px;
+  color: #777;
+}
+
+.emoji {
+  font-size: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #6b4f9c;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.field input {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid #f0e6ff;
+  background: #faf7ff;
+  font-size: 14px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #cdb4db;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.main {
+  background: #cdb4db;
+  color: #fff;
+}
+
+.btn.soft {
+  background: #f1f1f1;
+  color: #555;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.results-card {
+  display: none;
+}
+
+.results-card.visible {
+  display: block;
+}
+
+.result-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 12px 0;
+}
+
+.result-line strong {
+  color: #6b4f9c;
+}
+
+.error-message {
+  display: none;
+  background: #ffd6d6;
+  color: #a33;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.error-message.visible {
+  display: block;
+}
+
+.remarks-section {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.remarks-success {
+  background: #e8f8f0;
+}
+
+.remarks-warning {
+  background: #fff4cc;
+}
+
+.remarks-danger {
+  background: #fde2e2;
+}

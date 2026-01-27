@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pastel Prelim Grade Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header class="top">
+      <span class="emoji">🎀</span>
+      <h1>Prelim Grade Calculator</h1>
+
+    </header>
+
+    <section class="card">
+      <h2>📌 Enter Your Scores</h2>
+
+      <div class="field">
+        <label>Attendance</label>
+        <input type="number" id="attendance" placeholder="e.g. 18">
+      </div>
+
+      <div class="field">
+        <label>Lab Work 1</label>
+        <input type="number" id="lab1" placeholder="0 – 100">
+      </div>
+
+      <div class="field">
+        <label>Lab Work 2</label>
+        <input type="number" id="lab2" placeholder="0 – 100">
+      </div>
+
+      <div class="field">
+        <label>Lab Work 3</label>
+        <input type="number" id="lab3" placeholder="0 – 100">
+      </div>
+
+      <div class="buttons">
+        <button class="btn main" onclick="calculateGrade()">🌸 Calculate</button>
+        <button class="btn soft" onclick="clearFields()">🧼 Clear</button>
+      </div>
+    </section>
+
+    <div class="error-message" id="errorMessage"></div>
+
+    <section class="card results-card" id="outputSection">
+      <h2>📊 Results</h2>
+
+      <div class="result-line">
+        <span>Lab Average</span>
+        <strong id="displayLabAvg">--</strong>
+      </div>
+
+      <div class="result-line">
+        <span>Class Standing</span>
+        <strong id="displayClassStanding">--</strong>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="result-line">
+        <span>Needed to Pass (75)</span>
+        <strong id="displayPassScore">--</strong>
+      </div>
+
+      <div class="result-line">
+        <span>Needed for Excellent (100)</span>
+        <strong id="displayExcellentScore">--</strong>
+      </div>
+
+      <div class="remarks-section" id="remarksSection"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
