@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System - Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Record System</h1>
+            <!-- Programmer Identifier: Dupa, Neomi Ashley Sabien I. - 252460546 -->
+            <p class="identifier">Created by: Dupa, Neomi Ashley Sabien I. - 252460546</p>
+        </header>
+
+        <div class="form-container">
+            <h2>Add New Student Record</h2>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lab1">Lab Work 1:</label>
+                    <input type="number" id="lab1" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="lab2">Lab Work 2:</label>
+                    <input type="number" id="lab2" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="lab3">Lab Work 3:</label>
+                    <input type="number" id="lab3" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="prelim">Prelim Exam:</label>
+                    <input type="number" id="prelim" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="attendance">Attendance:</label>
+                    <input type="number" id="attendance" min="0" max="100" value="0">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Record</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h2>Student Records (Total: <span id="recordCount">0</span>)</h2>
+            <div class="table-wrapper">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Lab 1</th>
+                            <th>Lab 2</th>
+                            <th>Lab 3</th>
+                            <th>Prelim</th>
+                            <th>Attendance</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>Programmer: Dupa, Neomi Ashley Sabien I. - Student ID: 252460546</p>
+            <p>Student Record System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

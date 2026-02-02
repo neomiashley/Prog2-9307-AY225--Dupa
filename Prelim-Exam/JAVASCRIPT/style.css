@@ -1,0 +1,220 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f1f3f6;
+    min-height: 100vh;
+    color: #2c2f33;
+}
+
+/* ===== Main Container ===== */
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* ===== Header (Portal Style) ===== */
+header {
+    background: #1e3a8a; /* University blue */
+    color: #ffffff;
+    padding: 25px 40px;
+    border-bottom: 4px solid #facc15; /* Gold accent */
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.identifier {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* ===== Form Section ===== */
+.form-container {
+    padding: 30px 40px;
+    background: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+/* Grid layout like a portal */
+#studentForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+    grid-column: span 2;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: #dc2626;
+    color: #ffffff;
+    padding: 6px 14px;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+/* ===== Table Section ===== */
+.table-container {
+    padding: 30px 40px;
+}
+
+.table-container h2 {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+#recordCount {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    margin-top: 15px;
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+/* ===== Table (Student Portal Look) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+thead {
+    background: #f3f4f6;
+}
+
+thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 2px solid #d1d5db;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+tbody td {
+    padding: 12px 14px;
+    color: #374151;
+}
+
+tbody td:first-child {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #1f2937;
+    color: #d1d5db;
+    padding: 18px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .form-container,
+    .table-container {
+        padding: 20px;
+    }
+
+    #studentForm {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-primary {
+        grid-column: span 1;
+    }
+}
